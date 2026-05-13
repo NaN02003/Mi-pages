@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="utf-8">
+    <title>Armar Pedido-SJP</title>
+    <link rel="stylesheet" href="css/main.css">
+    </head>
+<body>
+    <button onclick="location.href='index.html'" class="toggle-btn">Volver</button>
+
+    <main class="contenido-principal">
+        <h1>Arma tu Pedido</h1>
+        
+        <div class="cargar-nombre">
+            <h3>Tus datos de entrega</h3>
+
+            <input id="nombre-us" class="form-control" type="text" placeholder="Ingrese su nombre">
+            <input id="dire-us" class="form-control" type="text" placeholder="Ingrese su direccion">           
+        </div>
+
+        <div class="opciones-pedido">
+            <button onclick="agregarAlPedido('Budín', 5000)">Agregar Budín</button>
+            <button onclick="agregarAlPedido('Bizcochuelo', 12000)">Agregar Bizcochuelo</button>
+            <button onclick="agregarAlPedido('Marmolado', 12500)">Agregar Marmolado</button>
+            <button onclick="agregarAlPedido('Torta Invertida', 14000)">Agregar Torta Invertida</button>
+            <button onclick="agregarAlPedido('Cupcakes', 7000)">Agregar Cupcakes (x12)</button>
+            <button onclick="agregarAlPedido('Cupcakes', 3700)">Agregar Cupcakes (x6)</button>
+            <button onclick="agregarAlPedido('Otro', 0)">Otro (Consultar)</button>
+        </div>
+
+        <section id="resumen-pedido">
+            <h3>Tu Pedido:</h3>
+            <ul id="lista-items" style="list-style: none; padding: 0;"></ul>
+            <p style="font-size: 1.5rem;"><strong>Total: $<span id="total-precio">0</span></strong></p>
+            <button class="btn-confirmar" onclick="enviarPedido()">Confirmar por WhatsApp</button></section>
+    </main>
+
+    <script src="js/pedido.js"></script>
+</body>
+
+</html>
