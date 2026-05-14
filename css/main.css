@@ -40,7 +40,7 @@ body{
     width: 100%;
     min-height: 100vh;
     padding: 30px;
-    border-sizing:border-box;
+    border-inline:border-box;
     /*transition: all 0.4s ease;*/
 }
 
