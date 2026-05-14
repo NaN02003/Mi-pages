@@ -554,3 +554,108 @@ body{
 
     color: white;
 }
+
+
+/* =========================
+   RESPONSIVE CELULAR
+========================= */
+
+@media (max-width: 768px){
+
+    /* MAIN */
+    .contenido-principal{
+        padding: 15px;
+    }
+
+    /* HERO */
+    .bien-sec{
+        height: auto;
+        min-height: 350px;
+
+        padding: 40px 20px;
+
+        border-radius: 20px;
+    }
+
+    .textoB h1{
+        font-size: 2rem;
+    }
+
+    .textoB p{
+        font-size: 1rem;
+    }
+
+    /* CAJAS INFO */
+    .info{
+        padding: 40px 15px;
+        gap: 20px;
+    }
+
+    .caja{
+        width: 100%;
+    }
+
+    /* LISTA PRODUCTOS */
+    .Lista ul{
+        justify-content: center;
+    }
+
+    .Lista li{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* CARRUSEL */
+    .carousel{
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .carousel-item img{
+        height: 250px;
+    }
+
+    /* BOTONES */
+    .btn-social{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* CONTACTO */
+    .contenedor-contacto{
+        padding: 25px 15px;
+    }
+
+    .botones-contacto-centrados{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-contacto{
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* FORMULARIOS */
+    .datos-usuario{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* NAVBAR */
+    .navbar-brand{
+        font-size: 1.1rem;
+    }
+
+}@media (max-width: 768px){
+
+    .opciones-pedido{
+        flex-direction: column;
+    }
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
