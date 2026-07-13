@@ -614,7 +614,25 @@ body{
     color: white;
 }
 
+.cargar-nombre{
+    margin-bottom: 30px;
+}
 
+.btn-ubicacion{
+    background-color: #875c30;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-ubicacion:hover{
+    background-color: #ab5c0d;
+    transform: scale(1.05);
+}
 /* =========================
    RESPONSIVE CELULAR
 ========================= */

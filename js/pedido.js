@@ -58,10 +58,34 @@ function enviarPedido() {
         alert("Por favor, completa tu nombre y direccion para la entrega.");
         return;
     }
+
+    function obtenerUbicacion(){
+
+    if(!navigator.geolocation){
+        alert("Tu navegador no soporta geolocalización.");
+        return;
+    }
+
+    navigator.geolocation.getCurrentPosition(function(posicion){
+
+        const lat = posicion.coords.latitude;
+        const lon = posicion.coords.longitude;
+
+        const link = `https://www.google.com/maps?q=${lat},${lon}`;
+
+        document.getElementById("dire-us").value = link;
+
+    }, function(){
+
+        alert("No se pudo obtener tu ubicación.");
+
+    });
+
+}
     
     let mensaje = "*Hola Sofia!%0A*";
     mensaje += `Este es un pedido de: *${nombre}*.%0A`;
-    mensaje += `Direccion: *${direccion}*%0A%0A`;
+    mensaje += `Direccion:%0A*${direccion}*%0A%0A`;
     
     mensaje += "Detalle del pedido:%0A";
     carrito.forEach(item => {
