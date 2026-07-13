@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Armar Pedido-SJP</title>
     <link rel="stylesheet" href="css/main.css">
     </head>
 <body>
-    <button onclick="location.href='index.html'" class="toggle-btn">Volver</button>
-
+    <a href="index.html" class="btn-social btn-volver">
+    ← Volver
+</a>
     <main class="contenido-principal">
         <h1>Arma tu Pedido</h1>
         
@@ -19,12 +21,13 @@
         </div>
 
         <div class="opciones-pedido">
-            <button onclick="agregarAlPedido('Budín', 5000)">Agregar Budín</button>
-            <button onclick="agregarAlPedido('Bizcochuelo', 12000)">Agregar Bizcochuelo</button>
-            <button onclick="agregarAlPedido('Marmolado', 12500)">Agregar Marmolado</button>
-            <button onclick="agregarAlPedido('Torta Invertida', 14000)">Agregar Torta Invertida</button>
-            <button onclick="agregarAlPedido('Cupcakes', 7000)">Agregar Cupcakes (x12)</button>
-            <button onclick="agregarAlPedido('Cupcakes', 3700)">Agregar Cupcakes (x6)</button>
+            <button onclick="agregarAlPedido('Budín', 5000)">Agregar Budín $5.000</button>
+            <button onclick="agregarAlPedido('Bizcochuelo', 15000)">Agregar Bizcochuelo $15.000</button>
+            <button onclick="agregarAlPedido('Carrot cake', 22000)">Agregar Marmolado $22.000</button>
+            <button onclick="agregarAlPedido('Torta Invertida', 22000)">Agregar Torta Invertida $22.000</button>
+            <button onclick="agregarAlPedido('Cupcakes', 12000)">Agregar Cupcakes Docena (x12) $12.000</button>
+            <button onclick="agregarAlPedido('Cupcakes', 7000)">Agregar Cupcakes media docena (x6) $7.000</button>
+            <button onclick="agregarAlPedido('Base Tortas', 15000)">Agregar base p/Tortas 24cm $15.000</button>
             <button onclick="agregarAlPedido('Otro', 0)">Otro (Consultar)</button>
         </div>
 

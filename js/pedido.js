@@ -59,7 +59,7 @@ function enviarPedido() {
         return;
     }
     
-    let mensaje = "Hola Sofia!%0A";
+    let mensaje = "*Hola Sofia!%0A*";
     mensaje += `Este es un pedido de: *${nombre}*.%0A`;
     mensaje += `Direccion: *${direccion}*%0A%0A`;
     

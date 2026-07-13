@@ -246,7 +246,7 @@ body{
 .Lista li{
     background: rgba(255,255,255,0.6);
 
-    padding: 12px 20px;
+    /*padding: 12px 20px;*/
 
     border-radius: 50px;
 
@@ -261,6 +261,14 @@ body{
     background: var(--rosa-fuerte);
 }
 
+.Lista li a{
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    width: 100%;
+}
 
 /*fondo bienvenida*/
 .bien-sec {
@@ -396,6 +404,21 @@ body{
 }
 
 /*Pagina pedidos*/
+@media (max-width:768px){
+
+    .opciones-pedido{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .opciones-pedido button{
+        width:100%;
+    }
+
+}
+
+
+
 .opciones-pedido {
     display: flex;
     flex-wrap: wrap;
@@ -404,7 +427,7 @@ body{
 }
 
 .opciones-pedido button {
-    background-color: #654321;
+    background-color: #875c30;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -419,8 +442,6 @@ body{
 }
 
 .item-carrito {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     background: white;
     padding: 10px;
@@ -428,6 +449,20 @@ body{
     border-radius: 5px;
     border-left: 5px solid #FFC0CB;
     max-width: 400px;
+}
+@media (max-width:768px){
+
+    .item-carrito{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+        max-width:100%;
+    }
+
+    .btn-eliminar{
+        width:100%;
+    }
+
 }
 
 .btn-eliminar {
@@ -497,6 +532,40 @@ body{
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
+.contenedor-web{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+@media (max-width:768px){
+
+    h1{
+        font-size:2rem;
+    }
+
+    h2{
+        font-size:1.5rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .btn-confirmar{
+        width:100%;
+        text-align:center;
+    }
+
+}
+
+.btn-volver{
+    display: inline-block;
+    margin: 20px;
+    width: auto;
+}
 
 
 /*header*/
@@ -526,25 +595,15 @@ body{
 }
 
 .btn-social{
-    display: inline-block;
-
-    margin: 40px auto;
-
-    padding: 15px 35px;
-
-    background: var(--marron);
-
-    color: white;
-
-    border-radius: 50px;
-
-    text-decoration: none;
-
-    font-weight: 600;
-
-    transition: var(--transicion);
-
-    box-shadow: var(--sombra-suave);
+    display:inline-block;
+    padding:15px 35px;
+    background:var(--marron);
+    color:white;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:var(--transicion);
+    box-shadow:var(--sombra-suave);
 }
 
 .btn-social:hover{
