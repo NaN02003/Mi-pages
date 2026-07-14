@@ -45,21 +45,7 @@ function actualizarInterfaz() {
     totalTxt.innerText = total;
 }
 
-function enviarPedido() {
-    const nombre = document.getElementById('nombre-us').value;
-    const direccion = document.getElementById('dire-us').value;
-    
-    if (carrito.length === 0) {
-        alert("¡El pedido está vacío!");
-        return;
-    }
-
-    if(!direccion || !nombre){
-        alert("Por favor, completa tu nombre y direccion para la entrega.");
-        return;
-    }
-
-    function obtenerUbicacion(){
+  function obtenerUbicacion(){
 
     if(!navigator.geolocation){
         alert("Tu navegador no soporta geolocalización.");
@@ -82,6 +68,22 @@ function enviarPedido() {
     });
 
 }
+
+function enviarPedido() {
+    const nombre = document.getElementById('nombre-us').value;
+    const direccion = document.getElementById('dire-us').value;
+    
+    if (carrito.length === 0) {
+        alert("¡El pedido está vacío!");
+        return;
+    }
+
+    if(!direccion || !nombre){
+        alert("Por favor, completa tu nombre y direccion para la entrega.");
+        return;
+    }
+
+  
     
     let mensaje = "*Hola Sofia!%0A*";
     mensaje += `Este es un pedido de: *${nombre}*.%0A`;
